@@ -1,0 +1,11 @@
+{
+    "shuffleProfiles": true,
+    "miningPeriodMinutes": {
+        "min": 8,
+        "max": 14
+    },
+    "delayBetweenProfilesMinutes": {
+        "min": 10,
+        "max": 20
+    }
+}
