@@ -9,8 +9,8 @@ async function switchToActivityPage(page) {
 }
 
 async function clickOnActivity(page) {
-    const baseX = randomClickOffset(280);
-    const baseY = 63;
+    const baseX = randomClickOffset(333);
+    const baseY = 205;
     await page.mouse.click(baseX, baseY);
     await new Promise(resolve => setTimeout(resolve, randomDelaySec()));
     const activityX = randomClickOffset(514);
@@ -26,4 +26,4 @@ async function completeActivity(page) {
     return;
 }
 
-export { completeActivity }
+export { completeActivity}
