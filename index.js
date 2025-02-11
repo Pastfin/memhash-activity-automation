@@ -58,9 +58,9 @@ async function startMiner(proxyOptions, link, userAgent, miningPeriodMinutes, ma
             console.log(`Активность прожата, наверно.`);
             await new Promise(resolve => setTimeout(resolve, randomLongDelaySec()));
 
-            await startMining(page);
-            console.log(`Майнинг запущен на период: ${Math.round(miningPeriodMinutes, 2)} минут.`);
-            await new Promise(resolve => setTimeout(resolve, miningPeriodMinutes * 60 * 1000));
+            // await startMining(page);
+            // console.log(`Майнинг запущен на период: ${Math.round(miningPeriodMinutes, 2)} минут.`);
+            // await new Promise(resolve => setTimeout(resolve, miningPeriodMinutes * 60 * 1000));
             
             await browser.close();
             return;
